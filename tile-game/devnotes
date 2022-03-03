@@ -1,0 +1,14 @@
+Color Squares development notes
+-----------------------------
+May 6, 2021
+-----------------------------
+
+Player is trying to get a tile board to look the same as a randomly generated
+"goal state" board. 
+
+When they tap a tile, all non-diagonal adjacent tiles flip colors as well.
+
+The colors change in a pre-determined way (red -> orange, orange -> yellow, yellow -> green, green -> red). 
+
+Can vary the board size, and number of colors. 
+

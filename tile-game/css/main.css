@@ -1,0 +1,22 @@
+
+html {
+	height: 90%;
+	width: 90%;
+}
+body{
+	height: 100%;
+	width: 100%;
+	padding-left: 5rem;
+	padding-top: 5rem;
+}
+#main-container, #main-row {
+	height: 100%;
+}
+#main-canvas {
+	border: 1px solid black;
+	position: absolute;
+	display: block;
+}
+#goal-canvas {
+	border: 1px solid black;
+}

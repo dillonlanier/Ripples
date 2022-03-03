@@ -1,0 +1,80 @@
+<!-- Color Ripples, by Dillon Lanier-->
+
+
+<!--#======================================================================================#
+# Last edited 2/26/22
+# Outline of functions that the game will need. Build interactive game using Javascript
+# and then supplement with other HTML and javascript. See paper outline for more details. 
+#======================================================================================#-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Ripples</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+	<div id="main-container" class="container-fluid">
+
+		<div id="main-row" class="row">
+
+				<div id="parent" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					<canvas id="main-canvas"></canvas>
+				</div>
+
+			<div id="time-move-tracker" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<canvas id="goal-canvas"></canvas>
+				<p>Time: 0:00</p>
+				<p>Moves: 0</p>
+				<p>The goal of Color Ripples is to make the two boards match. Click on a tile to flip it and all directly adjacent tiles to the next color. They flip in rainbow order. Increase difficulty by adding colors and/or increasing board size. Click start to begin a game.</p>
+				<button type="button"> Restart </button>
+				<button type="button"> Quit</button>
+			</div>
+
+
+		</div>
+	</div>
+<script src="tilegame.js"></script>
+</body>
+</html>
+
+<!--
+PYTHON PSEUDO CODE
+
+# Global variables
+global board_size
+global num_colors
+global num_moves
+
+
+def gameLoop (Gamestate):
+	#Gets started by main and then loops until a win con is hit
+	#takes a player, whoever's turn it is
+	return
+
+def turn (Gamestate):
+	#code for a human player to take a turn, could be one two or none
+	#returns a gamestate after one move
+	return next_gamestate
+
+
+def checkWin(Gamestate):
+	#check if a given player has won the game
+	#matches gamestate against winstate
+	return
+
+
+def generateInitialGamestate():
+	#Called once, creates the starting game state from a given winstate
+	#Can do this randomly for best performance and replayability
+	return
+
+def generateWinState():
+	#Could randomly choosea winstate-- should be global variable?
+	#returns a board.... is it a gamestate? Or a sub class of this that doesn't hold whos turn it is?
+	return
+
+-->
+
