@@ -1,14 +1,23 @@
-Color Squares development notes
+Color Ripples development notes
 -----------------------------
-May 6, 2021
+March 3rd, 2021
 -----------------------------
 
 Player is trying to get a tile board to look the same as a randomly generated
-"goal state" board. 
+"goal state" board. Might have to make goal state by doing 5-20 or however many random moves 
+to make sure it's actually solveable.
 
 When they tap a tile, all non-diagonal adjacent tiles flip colors as well.
 
-The colors change in a pre-determined way (red -> orange, orange -> yellow, yellow -> green, green -> red). 
+The colors change in a pre-determined way (red -> orange, orange -> yellow, yellow ->  red). 
 
-Can vary the board size, and number of colors. 
+
+****None of the buttons work right now, just place holders. Reload page to get a new goal state.
+
+
+
+Can vary the board size, and number of colors, but honestly 3x3 with two colors might be hard enough. 
+Maybe should have a 2x2 with 2 colors options
+
+
 
