@@ -16,6 +16,7 @@
 
 </head>
 <body>
+
 	<div id="main-container" class="container-fluid">
 
 		<div id="main-row" class="row">
@@ -26,17 +27,24 @@
 
 			<div id="time-move-tracker" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<canvas id="goal-canvas"></canvas>
+				<script src="tilegame.js"></script>
 				<p>Time: 0:00</p>
-				<p>Moves: 0</p>
-				<p>The goal of Color Ripples is to make the two boards match. Click on a tile to flip it and all directly adjacent tiles to the next color. They flip in rainbow order. Increase difficulty by adding colors and/or increasing board size. Click start to begin a game.</p>
-				<button type="button"> Restart </button>
-				<button type="button"> Quit</button>
+				<p>Moves: <span id="moves"></span></p>
+				<p>The goal of Color Ripples is to make the two boards match. Click on a tile to flip it and all directly adjacent tiles to the next color. They flip in rainbow order. Reload the page to get a new goal board.</p>
+				<!-- <form action="">
+					<label for="input_board_size">Board Size</label>
+					<input type="number" id="input_board_size" name="input_board_size" value="2">
+					<label for="input_num_colors">Number of Colors</label>
+					<input type="number" id="input_num_colors" name="input_num_colors" value="2">
+					<input id="Start" type="button" value="Start" onclick="play()">
+
+				</form>
+				<button type="button"> Quit</button> -->
 			</div>
 
 
 		</div>
 	</div>
-<script src="tilegame.js"></script>
 </body>
 </html>
 
