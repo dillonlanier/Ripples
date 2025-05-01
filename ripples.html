@@ -1,0 +1,33 @@
+<?php /* Template Name: free play*/ ?>
+<?php get_header();?>
+<section class="page-wrap">
+	<div class="container-flex">
+		<div id="wordpress-content">
+			<?php if (have_posts()) : while(have_posts()) : the_post();?>
+				<?php the_content();?>
+			<?php endwhile; else: endif;?>
+		</div>
+		<div id="main-container" class="container-fluid">
+			<div id="game-row" class="row">
+				<div id="time-move-tracker" class="col-12">
+					<p>Goal Board: </p>
+					<canvas id="goal-canvas"></canvas>
+					<!-- <script src="game.js"></script> -->
+					<p class="counter">Time: <span id="timer"></span><br>
+					Moves: <span id="moves"></span></p>
+				</div>
+				
+
+				<div id="main-canvas-parent" class="col-12">
+					<canvas id="main-canvas"></canvas>
+				</div>
+				<div class="col-12">
+					<form action="">
+						<input class="freeplay" id="Start" type="button" value="Start" onclick="play();">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<?php get_footer();?>
