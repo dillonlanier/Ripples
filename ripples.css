@@ -1,0 +1,49 @@
+#time-move-tracker {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2rem;
+}
+#time-move-tracker p {
+    margin: auto 0;
+    padding: 1rem;
+}
+#time-move-tracker p.counter {
+    padding-left: 2rem;
+}
+
+#main-canvas-parent {
+    height: 70%;
+    text-align: center;
+}
+#main-canvas {
+    border: 1px solid black;
+    max-width: 100%;
+}
+#goal-canvas {
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+.freeplay {
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+}
+#how-to-play-link:hover, #how-to-play-link:active {
+	  opacity: 0.7;
+}
+form input[type=number] {
+    max-width: 30px;
+    margin:  0 10px 0 0;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+#Start {
+    background-color: #3D1773;
+	  border: solid 2px white;
+    margin:30px auto;
+    height: 50px;
+    color: white;
+}
